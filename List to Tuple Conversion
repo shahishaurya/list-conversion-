@@ -1,0 +1,17 @@
+#convert a list to tuple method 1 (using tuple(list_name))
+def convert(list):
+    return tuple(list)
+list = [1, 2, 3, 4]
+print(convert(list))
+
+#convert a list to tuple method 2 (loop inside a tuple())
+def convert(list):
+    return tuple(i for i in list)
+list = [1, 2, 3, 4]
+print(convert(list))
+
+#convert a list to tuple method 3 (use (*list,))
+def convert(list):
+    return (*list, )
+list = [1, 2, 3, 4]
+print(convert(list))
