@@ -1,0 +1,25 @@
+#convert a list to string method 1 (Looping/Iteration over the list)
+def listToString(s):
+    str1 = ""
+    for e in s:
+        str1 += e
+    return str1
+s = ['Tit', 'for', 'Tat']
+print(listToString(s))
+
+#convert a list to string method 2 (using .join() method)
+def listToString(s):
+    str1 = " "
+    return (str1.join(s))
+s = ['Tit', 'for', 'Tat']
+print(listToString(s))
+
+#convert a list to string method 3 (Using list comprehension)
+s = ['Tit', 4, 'Tat']
+listToStr = ' '.join([str(elem) for elem in s])
+print(listToStr)
+
+#convert a list to string method 4 (Using Map)
+s = ['Tit', 4, 'Tat']
+listToStr = ' '.join(map(str, s))
+print(listToStr)
